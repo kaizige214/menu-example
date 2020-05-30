@@ -36,6 +36,10 @@ public int Handler_mianMenu(Menu menu, MenuAction action, int client,int itemNum
 			{
 				FakeClientCommand(client, "sm_nominate"); 
 			}
+			case 5:
+			{
+				FakeClientCommand(client, "sm_hop"); 
+			}
 		}
 	}
 	
@@ -50,7 +54,8 @@ void Menus_Showmain(int client)
 	menu.AddItem("sb","回到奖励关[!b]");
 	menu.AddItem("sb","暂停[!pause]");
 	menu.AddItem("sb","切换模式[!style]");
-	menu.AddItem("sb","预定菜单[!yd]");
+	menu.AddItem("sb","预定菜单[!nominate]");
+	menu.AddItem("sb","服务器转跳[!hop]");
 	menu.Display(client, MENU_TIME_FOREVER);
 	menu.ExitButton = true;
 }
