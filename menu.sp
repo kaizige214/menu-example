@@ -57,5 +57,5 @@ void Menus_Showmain(int client)
 
 public Action F3bind(client, const String:command[], args)
 {
-	
+	Menus_Showmain(client);
 } 
